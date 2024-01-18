@@ -21,11 +21,9 @@ public class ejercicio42Error {
 		do {
 			System.out.println("escribe un valor o 999 para salir");
 			numero_uno = Double.parseDouble(bufEntrada.readLine());
-			contador = contador+1;
-			acumulador = acumulador+contador;
-		} while (numero_uno!==999);
+			contador = contador + 1;
+			acumulador = acumulador + contador;
+		} while (numero_uno != 999);
 	}
 
-
 }
-
