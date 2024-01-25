@@ -4,7 +4,7 @@ class Inmobiliaria {
 	// El valor por defecto de riesgo es 0
 
 	int riesgo;
-
+	
 	
 	/**
 	 * Calcula los a�o que tiene un piso hasta el 2013.
