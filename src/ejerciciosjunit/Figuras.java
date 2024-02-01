@@ -2,14 +2,14 @@ package ejerciciosjunit;
 
 
 public class Figuras {
-	public static final float PI=3.14f;
+	public  final float PI=3.14f;
 	/**
 	 * Suma los numeros introducidos por parametro
 	 * @param numUno
 	 * @param numDos
 	 * @return la suma de los numeros
 	 */
-	public static int sumaEnteros(int numUno,int numDos){
+	public int sumaEnteros(int numUno,int numDos){
 		return numUno+numDos;
 	}
 	/**
@@ -17,9 +17,10 @@ public class Figuras {
 	 * @param radio del circulo
 	 * @return el area
 	 */
-	public static float areaCirculo(float radio){
+	public  float areaCirculo(float radio){
 		if(radio>=0)
-			return (float) (PI*Math.pow(radio, 2));
+//			return (float) (PI*radio);
+		return (float) (PI*Math.pow(radio, 2));
 		else
 			return -1;
 	}
@@ -29,7 +30,7 @@ public class Figuras {
 	 * @param numero
 	 * @return true si es par o false en caso contrario
 	 */
-	public static boolean esPar(int numero){
+	public  boolean esPar(int numero){
 		if(numero%2==0)
 			return true;
 		else
@@ -37,7 +38,7 @@ public class Figuras {
 					
 	}
 	
-	static long elevarNumero(int numero,int potencia){
+	 long elevarNumero(int numero,int potencia){
 		long resultado=1;
 		for (int i = 0; i < potencia; i++) {
 			resultado*=numero;
