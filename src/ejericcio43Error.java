@@ -3,7 +3,7 @@ Es posible que el codigo generado no sea completamente correcto. Si encuentra
 errores por favor reportelos en el foro (http://pseint.sourceforge.net). */
 
 // En java, el nombre de un archivo fuente debe coincidir con el nombre de la clase que contiene,
-// por lo que este archivo debería llamarse "EJERCICIO43.java."
+// por lo que este archivo deberï¿½a llamarse "EJERCICIO43.java."
 
 import java.io.*;
 import java.math.*;
@@ -25,7 +25,7 @@ public class ejericcio43Error {
 			System.out.println("introduce un numero natural");
 			numero_uno = Double.parseDouble(bufEntrada.readLine());
 		} while (numero_uno<=0);
-		temporal = Math.floor(numero_uno/2);
+		temporal = (int) Math.floor(numero_uno/2);
 		for (contador=temporal;contador>=2;contador--) {
 			if (numero_uno%contador==0) {
 				acumulador = acumulador+contador;
